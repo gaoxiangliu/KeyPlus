@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .warning {
+                background-color: #fff7ae;
+                border-radius: 15px;
+                padding: 20px;
+            }
+            .tip {
+                background-color: #b4ffba;
+                border-radius: 15px;
+                padding: 20px;
+            }
+            .title {
+                font-weight: bold;
+                font-size: 24px;
+            }
+            .question {
+                font-weight: bold;
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+            .answer {
+                margin-top: 5px;
+                padding-top: 0px;
+                margin-bottom: 5px;
+            }
+            .tip_text {
+                font-weight: bold;
+                font-size: 16px;
+                color: #108b00;
+            }
+            .warning_text {
+                font-weight: bold;
+                font-size: 16px;
+                color: #a07a00;    
+            }
+            .chinese_papag {
+                text-indent: 30px;
+            }
+        </style>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div style="width: 100%; height: 600px;">
+            <!-- left panel menu -->
+            <div style="float: left; height: 100%; border-right: 1px solid #ccc; width: 200px;">
+                <p class="title">Content</p>
+                <ul style="list-style-type: none;">
+                    <li><a href="#overview">概览</a></li>
+                    <li><a href="#statistics">按键统计</a></li>
+                    <li><a href="#keyboard_test">键盘测试</a></li>
+                    <li><a href="#typing_speed">打字速度测试</a></li>
+                    <li><a href="#key_assignment">按键任务</a></li>
+                    <li><a href="#mechanical">机械键盘声音模拟</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </div>
+
+            <!-- right part main body -->
+            <div style="float: left; height: 100%; width: 600px; padding: 0 10px 0 10px; overflow-y: scroll;">
+                <!-- <div style="clear: both;"></div> -->
+                <p id="overview" class="title">概览</p>
+                <p class="chinese_papag">
+                    该程序与键盘有关。其可以记录您的键盘按键次数并显示统计列表以及直观的按键统计图（热区图）。它也可以被用来测试104键键盘。另一个有用的功能是按键任务，您可以定义系统热键来完成诸如控制系统音量以及运行程序等任务。此外，您还可以用这个程序来测试以及提高打字速度。另外一个有趣的功能是模拟机械键盘的声音，该功能仅供娱乐以及增加打字的快乐。
+                </p>
+                <p class="chinese_papag">
+                    如果您发现了该程序存在漏洞，请便联系开发者。这个程序是开源的，您可以查看它是怎么工作的。
+                </p>
+                <p class="chinese_papag">
+                    希望在您没有阅读该说明的情况下也能轻松地使用该程序。但是，如果您想获得更好的体验，还是阅读一下本说明。本说明将介绍一些使用技巧以及您必须要知道的事情。本说明不包括程序非常简单的功能，所以它并不太长。
+                </p>
+
+                <br><br>
+                <p id="statistics" class="title">按键统计</p>
+                <p class="chinese_papag">
+                    按键统计是本程序的基础功能。程序运行后，它将会自动记录您的按键。请便最小化窗口，它将在后台记录您的按键。
+                </p>
+                <div class="warning">
+                    <div class="warning_text">注意</div>
+                    <p class="chinese_papag">
+                        如果您点击“退出”菜单项退出该程序，按键将不会再被记录。如果您可以在任务栏托盘上看见该程序的图标，那么它还是在后台运行着，按键将会被记录。默认情况下，该程序将会在Windows系统启动后自动运行。您也可以取消自动启动通过“偏好”->“设置”菜单项。请同时也注意在有些情况下按键记录功能是不可以正常工作的，比如在VMWare虚拟机里面。
+                    </p>
+                </div>
+                <p class="chinese_papag">总按键次数是从您安装该程序的时候进行统计。</p>
+                <p class="chinese_papag">当前按照次数是从您运行该程序的时候开始统计。</p>
+                <p class="chinese_papag">
+                    只有总按键次数才会被存入文件。所以，如果当前按键统计数据对于您来说非常重要的话，请一定要保存，点击“统计列表” -> “导出”。
+                </p>
+                <p class="chinese_papag">
+                    您可以通过单选按钮或者选择菜单项还切换这两种模式。您也可以选择您自己喜欢的按键图（热区图）的色调。
+                </p>
+                <p class="chinese_papag">
+                    刷新模式控制着按键统计图（热区图）什么时候会被刷新。在“延时”模式中，热区图将会在总按键统计文件保存的时候更新。保存时间间隔默认为10分钟，您可以在“偏好” -> “设置”菜单项当中更改保存时间间隔。在“实时”模式中，热区图将会在每次按键后立即更新。
+                </p>
+                <div class="warning">
+                    <div class="warning_text">注意</div>
+                    <p class="chinese_papag">
+                        本程序只支持104键或更少的QWERTY布局的键盘。如果您的键盘多于104键，一些按键可能没法被记录。如果您的键盘不是QWERTY布局，该程序可能不适合您。
+                    </p>
+                </div>
+                <br>
+                <div class="tip">
+                    <div class="tip_text">提示</div>
+                    <p class="chinese_papag">
+                        按键统计在实际生活中是多用途的。例如，它可以告诉您按键使用频率，所以，您可以知道哪些按键是您经常使用的。所以，如果您是键盘制造商，您或许可以考虑增加常用键的强度。它同样也可以告诉您哪个字母是英语中最常用的字母。（当然是E了。）另外一例子是如果您使用非英语的输入法，您可以通过热区图比较一下不同输入法的效率。一个高效的非英语输入法应该避免使用像Q、Z、O和P等按键。（因为它们比较难按下。）同样，您也可以查看在一个游戏当中哪些按键比较常用。可能性是无限的。
+                    </p>
+                </div>
+
+                <br><br><br>
+                <p id="keyboard_test" class="title">键盘测试</p>
+                <p class="chinese_papag">
+                    当切换至该模式时，您可以测试您的键盘是否正常工作。您可以根据您的需求来勾选或者不勾选“保留按键轨迹”。
+                </p>
+                <div class="tip">
+                    <div class="tip_text">提示</div>
+                    <p class="chinese_papag">
+                        在键盘测试模式中，您可以查看在当前环境下您的按键是否被正常地记录。当“保留按键轨迹”没有被勾选时，主窗口中的按键可以作按键演示使用。
+                    </p>
+                </div>
+
+                <br><br><br>
+                <p id="typing_speed" class="title">打字速度测试</p>
+                <p class="chinese_papag">
+                    您可以点击“技能测试” -> “打字速度测试（WPM）”来测试您的打字速度。这也是提高您打字速度非常好的工具。单词都是英语中的常用词。练习！这些单词对于日常打字速度的提升很有帮助。
+                </p>
+                <p class="chinese_papag">
+                    英文打字速度的单位是WPM，也就是每分钟的单词数量。那么问题来了，如何定义“单词”呢？一个单词有多少个字母呢？这里，一个单词有5个字符（注意，字符不是字母）。一个字符包括字母、标点符号和空格。是的，空格，它在两个单词之间，只要您的输入是有效的。例如，您的WPM是80，那么，您本次输入的有效字符是400个。
+                </p>
+                <p class="chinese_papag">
+                    那我们如何定义有效字符呢？如果您输入了一个正确的单词，然后按下了空格键，该单词所包涵的字母数量以及这一个空格都被算作是有效字符。例如，您正确地输入了测试单词“girl”，这算5个有效字符，它们都将会被算进WPM。相反，如果您输入的单词有误，哪怕是非常小的拼写错误，该单词的所有字母包括空格都是无效输入。还是用“girl”这个例子，如果您输入“gril”、“girle”、“gir”然后再按空格，这都被算作无效字符，它们自然也不会被算进WPM里面去。非常明显，有效和无效字符取决于测试单词，它们与您真正的按键次数无关。（因为您可能会有输入错误）
+                </p>
+                <p class="chinese_papag">
+                    关于WPM的计算到此为止。我们来看一下有关准确率的计算。您可能会认为准确率就是有效字符（上面提到的）和总字符的比率，可是，这完全不对！准确率与您的实际按键次数有关。再来引入几个术语，“总按键次数”，“有效（无效）按键次数”。每当您应当按下一个按键的时候，系统有一个期望的正确按键。例如，当您正要输入测试单词“girl”的时候，这个时候的期望按键是G。如果您完成了输入该单词，期望正确按键就是空格键。如果您在单词中间有错误输入，就像您输入了“jri”（这三个字母都错了），现在，期望按键依然是L（并不是G）。即使您在按下空格键之前更正了错误，无效按键还是会被记录，这会将影响您的准确率。
+                </p>
+                <p class="chinese_papag">
+                    再来说一下打字速度练习的建议。首先，调整您的坐姿，您可以使用舒服的桌椅。同样，坐直身体。哪个使用电脑的姿势是正确的很难说，但是您应该找到一个适合自己的健康的姿势。第二，键盘。薄膜键盘的手感很差，但这并不意味着它的打字速度不快。机械键盘的手感比较好，如果您经常使用键盘的话，机械键盘会给您很好的体验。至于哪种机械轴更好，这很难说，因为哪种都很好，只是适合不同的人使用。所以，您或许应该中找到自己喜欢的轴。通常来说，强段落轴和弱段落轴比较适合打字，因为反馈感可以帮助您减少打字错误；而线性轴适合游戏。使用线性轴打字可能会有较多打字错误。但还是，不同人的体验是不一样的。然后，最重要的提示就是如何练习打字了。在绝大多数情况下，准确率是相当重要的。所以，不要只看WPM的数值。不要过于着急地去提高WPM，飞速地打字，然后发现有很多打字错误。打字错误会使WPM大幅减少，同样也会影响打字节奏以及心情。所以，多关注一下准确率。推荐您在打字的时候集中精力。然后在准确率至少96%（推荐98%）以上的情况下，以最快的速度打字。然后您就会发现经过一段时间，您的打字速度会线性地增长。
+                </p>
+
+                <br><br>
+                <p id="key_assignment" class="title">按键任务</p>
+                <p class="chinese_papag">
+                    您可以在“按键任务”菜单中启用、禁用或者配置按键任务。按键任务是系统的热键。任务包括显示本程序的主窗体当程序在后台运行时，控制系统音量以及运行程序或者打开媒体文件。
+                </p>
+                <p class="chinese_papag">
+                    热键可以是单个按键，或者是多个组合按键（Ctrl, Alt, Shift, Windows）。
+                </p>
+                <div class="tip">
+                    <div class="tip_text">提示</div>
+                    <p class="chinese_papag">
+                        如果您使用没有功能键的台式机键盘，该功能特别有用。
+                    </p>
+                </div>
+
+                <br><br><br>
+                <p id="mechanical" class="title">机械键盘声音模拟</p>
+                <div class="warning">
+                    <div class="warning_text">注意</div>
+                    <p class="chinese_papag">
+                        不同计算机的用户体验可能会不同。如果该功能让您的计算机变慢，请不要使用。
+                    </p>
+                </div>
+
+                <br><br><br>
+                <p id="faq" class="title"FAQ>常见问题</p>
+                <p class="question">本程序安全吗？</p>
+                <p class="answer">- 肯定安全！它是开源的，您可以看它是怎么工作的。</p>
+                <br>
+                <p class="question">为什么我的杀毒软件会报告本程序？</p>
+                <p class="answer">
+                    - 这可能是因为本程序会对文件进行读写，以及对注册表进行修改。本程序仅仅会对位于您的当前Windows用户的文档目录下的KeyboardStatistic子目录下的文件进行读写。
+                </p>
+                <p class="answer">- 至于注册表，本程序仅会用它完成开机自动启动功能。</p>
+                <p class="answer">- 您完全可以将本程序添加至白名单。</p>
+                <br>
+                <p class="question">我的键盘活动会被上传到网上吗？</p>
+                <p class="answer">- 绝对不会。它仅会保存在您的本机。</p>
+                <br>
+                <p class="question">为什么点击系统托盘上的图标但看不见主窗口？</p>
+                <p class="answer">- 您可以右击系统托盘上的图标，然后单击“窗口位置居中”或者“窗口位置设为左上角”。</p>
+                <br>
+                <p class="question">有什么有些时候该程序不能记录按键？</p>
+                <p class="answer">
+                    - 正如前面说过的，本程序只会在操作系统较高层中监听按键。有一些程序会在系统底层拦截按键，这是本程序无法监听的。
+                </p>
+                <br>
+                <p class="question">为什么该程序不能区分开两个“回车”键？</p>
+                <p class="answer">- 该程序在系统较高层次中监听按键，Windows系统中的这两个按键的键码是一样的。</p>
+                <br>
+                <p class="question">为什么按键热区图不刷新？</p>
+                <p class="answer">- 在“实时”模式中，热区图才会被立即刷新，但这也可能会在程序窗口可见时消耗更多的CPU资源。（当窗口最小化时并不会消耗太多。）所以，如果您想看按键热区图的动态变化，请确保使用“实时”模式。在“延时”模式，热区图只会随着按键次数统计文件的保存而刷新。</p>
+                <br>
+                <p class="question">为什么我不能同时按下多个按键？</p>
+                <p class="answer">
+                    - 这个是因为什么的键盘。对于大多数的机械键盘来说，同时按下所有按键是没有问题的。但是，对于薄膜键盘，您一次只能同时按下很少的几个按键。
+                </p>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </body>
+</html>

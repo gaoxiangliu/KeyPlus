@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F9B5EC2-FFA8-496F-87DA-03EE00D1E4CE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KeyboardHook01</RootNamespace>
+    <AssemblyName>KeyPlus</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo64.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ColorUtil.cs" />
+    <Compile Include="Configure.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCPS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCPS.Designer.cs">
+      <DependentUpon>FormCPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHelp.Designer.cs">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKeyAssignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKeyAssignment.Designer.cs">
+      <DependentUpon>FormKeyAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSettings.Designer.cs">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSpaceCPS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSpaceCPS.Designer.cs">
+      <DependentUpon>FormSpaceCPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatisticsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatisticsList.Designer.cs">
+      <DependentUpon>FormStatisticsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWPM.Designer.cs">
+      <DependentUpon>FormWPM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalKeyboardHook.cs" />
+    <Compile Include="HitGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeyAssignment.cs" />
+    <Compile Include="Keyboard.cs" />
+    <Compile Include="KeyEventHandler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Language.cs" />
+    <Compile Include="MainFormActionHandler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormBusiness.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyDraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RightClickMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storage.cs" />
+    <Compile Include="UIBusiness.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCPS.resx">
+      <DependentUpon>FormCPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHelp.resx">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKeyAssignment.resx">
+      <DependentUpon>FormKeyAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSettings.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSpaceCPS.resx">
+      <DependentUpon>FormSpaceCPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatisticsList.resx">
+      <DependentUpon>FormStatisticsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWPM.resx">
+      <DependentUpon>FormWPM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo64.ico" />
+    <Content Include="resource\black_and_white.png" />
+    <Content Include="resource\blue.png" />
+    <Content Include="resource\buckling_bs_down.wav" />
+    <Content Include="resource\buckling_bs_up.wav" />
+    <Content Include="resource\buckling_down.wav" />
+    <Content Include="resource\buckling_enter_down.wav" />
+    <Content Include="resource\buckling_enter_up.wav" />
+    <Content Include="resource\buckling_space_down.wav" />
+    <Content Include="resource\buckling_space_up.wav" />
+    <Content Include="resource\buckling_up.wav" />
+    <Content Include="resource\cherry_mx_black_bs_down.wav" />
+    <Content Include="resource\cherry_mx_black_bs_up.wav" />
+    <Content Include="resource\cherry_mx_black_down.wav" />
+    <Content Include="resource\cherry_mx_black_enter_down.wav" />
+    <Content Include="resource\cherry_mx_black_enter_up.wav" />
+    <Content Include="resource\cherry_mx_black_space_down.wav" />
+    <Content Include="resource\cherry_mx_black_space_up.wav" />
+    <Content Include="resource\cherry_mx_black_up.wav" />
+    <Content Include="resource\cherry_mx_blue_down.wav" />
+    <Content Include="resource\cherry_mx_blue_up.wav" />
+    <Content Include="resource\cherry_mx_brown_bs_down.wav" />
+    <Content Include="resource\cherry_mx_brown_bs_up.wav" />
+    <Content Include="resource\cherry_mx_brown_down.wav" />
+    <Content Include="resource\cherry_mx_brown_enter_down.wav" />
+    <Content Include="resource\cherry_mx_brown_enter_up.wav" />
+    <Content Include="resource\cherry_mx_brown_space_down.wav" />
+    <Content Include="resource\cherry_mx_brown_space_up.wav" />
+    <Content Include="resource\cherry_mx_brown_up.wav" />
+    <Content Include="resource\cherry_mx_green_down.wav" />
+    <Content Include="resource\cherry_mx_green_up.wav" />
+    <Content Include="resource\cherry_mx_red_down.wav" />
+    <Content Include="resource\cherry_mx_red_silence_down.wav" />
+    <Content Include="resource\cherry_mx_red_silence_up.wav" />
+    <Content Include="resource\cherry_mx_red_up.wav" />
+    <Content Include="resource\cherry_mx_silence_black_down.wav" />
+    <Content Include="resource\cherry_mx_silence_black_up.wav" />
+    <Content Include="resource\cherry_mx_silver_down.wav" />
+    <Content Include="resource\cherry_mx_silver_up.wav" />
+    <Content Include="resource\cyan.png" />
+    <Content Include="resource\en-US.xml" />
+    <Content Include="resource\green.png" />
+    <Content Include="resource\half_rainbow.png" />
+    <Content Include="resource\help.html" />
+    <Content Include="resource\help_cn.html" />
+    <Content Include="resource\holy_bs_down.wav" />
+    <Content Include="resource\holy_bs_up.wav" />
+    <Content Include="resource\holy_down.wav" />
+    <Content Include="resource\holy_enter_down.wav" />
+    <Content Include="resource\holy_enter_up.wav" />
+    <Content Include="resource\holy_space_down.wav" />
+    <Content Include="resource\holy_space_up.wav" />
+    <Content Include="resource\holy_up.wav" />
+    <Content Include="resource\ink_bs_down.wav" />
+    <Content Include="resource\ink_bs_up.wav" />
+    <Content Include="resource\ink_down.wav" />
+    <Content Include="resource\ink_enter_down.wav" />
+    <Content Include="resource\ink_enter_up.wav" />
+    <Content Include="resource\ink_space_down.wav" />
+    <Content Include="resource\ink_space_up.wav" />
+    <Content Include="resource\ink_up.wav" />
+    <Content Include="resource\kailh_bs_down.wav" />
+    <Content Include="resource\kailh_bs_up.wav" />
+    <Content Include="resource\kailh_down.wav" />
+    <Content Include="resource\kailh_enter_down.wav" />
+    <Content Include="resource\kailh_enter_up.wav" />
+    <Content Include="resource\kailh_space_down.wav" />
+    <Content Include="resource\kailh_space_up.wav" />
+    <Content Include="resource\kailh_up.wav" />
+    <Content Include="resource\keyplus_pic.png" />
+    <Content Include="resource\logo64.ico" />
+    <Content Include="resource\magenta.png" />
+    <Content Include="resource\novelkeys_bs_down.wav" />
+    <Content Include="resource\novelkeys_bs_up.wav" />
+    <Content Include="resource\novelkeys_down.wav" />
+    <Content Include="resource\novelkeys_enter_down.wav" />
+    <Content Include="resource\novelkeys_enter_up.wav" />
+    <Content Include="resource\novelkeys_space_down.wav" />
+    <Content Include="resource\novelkeys_space_up.wav" />
+    <Content Include="resource\novelkeys_up.wav" />
+    <Content Include="resource\rainbow.png" />
+    <Content Include="resource\red.png" />
+    <Content Include="resource\skcm_bs_down.wav" />
+    <Content Include="resource\skcm_bs_up.wav" />
+    <Content Include="resource\skcm_down.wav" />
+    <Content Include="resource\skcm_enter_down.wav" />
+    <Content Include="resource\skcm_enter_up.wav" />
+    <Content Include="resource\skcm_space_down.wav" />
+    <Content Include="resource\skcm_space_up.wav" />
+    <Content Include="resource\skcm_up.wav" />
+    <Content Include="resource\topre_bs_down.wav" />
+    <Content Include="resource\topre_bs_up.wav" />
+    <Content Include="resource\topre_down.wav" />
+    <Content Include="resource\topre_enter_down.wav" />
+    <Content Include="resource\topre_enter_up.wav" />
+    <Content Include="resource\topre_space_down.wav" />
+    <Content Include="resource\topre_space_up.wav" />
+    <Content Include="resource\topre_up.wav" />
+    <Content Include="resource\turquoise_bs_down.wav" />
+    <Content Include="resource\turquoise_bs_up.wav" />
+    <Content Include="resource\turquoise_down.wav" />
+    <Content Include="resource\turquoise_enter_down.wav" />
+    <Content Include="resource\turquoise_enter_up.wav" />
+    <Content Include="resource\turquoise_space_down.wav" />
+    <Content Include="resource\turquoise_space_up.wav" />
+    <Content Include="resource\turquoise_up.wav" />
+    <Content Include="resource\words.txt" />
+    <Content Include="resource\words_gmat.txt" />
+    <Content Include="resource\words_gre.txt" />
+    <Content Include="resource\words_toefl.txt" />
+    <Content Include="resource\words_top_1000.txt" />
+    <Content Include="resource\words_top_200.txt" />
+    <Content Include="resource\yellow.png" />
+    <Content Include="resource\zh-CN.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<text>
+	<string name="program_title">K+</string>
+
+	<string name="menu_file">文件</string>
+	<string name="save">保存</string>
+	<string name="exit">退出</string>
+
+	<string name="menu_mode">模式</string>
+	<string name="mode_total">总共按键次数</string>
+	<string name="mode_current">本次按键次数</string>
+	<string name="mode_test">键盘测试</string>
+
+	<string name="menu_preference">偏好</string>
+	<string name="language">语言</string>
+	<string name="english">英语</string>
+	<string name="simplified_chinese">简体中文</string>
+	<string name="color_tone">色调</string>
+	<string name="red">红</string>
+	<string name="green">绿</string>
+	<string name="blue">蓝</string>
+	<string name="yellow">黄</string>
+	<string name="cyan">青</string>
+	<string name="magenta">品红</string>
+	<string name="half_rainbow">半彩虹</string>
+	<string name="rainbow">彩虹</string>
+	<string name="black_and_white">黑白</string>
+	<string name="stay_on_top">窗口保持最前端</string>
+	<string name="settings">设置</string>
+
+	<string name="menu_skill_tests">技能测试</string>
+	<string name="skill_wpm">打字速度测试 (WPM)</string>
+	<string name="skill_cps">点击速度测试 (CPS)</string>
+	<string name="skill_st">空格按键速度测试</string>
+
+	<string name="menu_key_assignment">按键任务</string>
+	<string name="enable">启用</string>
+	<string name="disable">禁用</string>
+	<string name="configure">配置</string>
+
+	<string name="menu_help">帮助</string>
+	<string name="view_help">查看帮助</string>
+	<string name="about">关于</string>
+
+	<string name="alert_reboot">配置成功，请点击“确定”按钮重启程序以生效</string>
+
+	<string name="mode_total_tip">总共按键次数自从</string>
+	<string name="mode_current_tip">本次按键次数自从</string>
+	<string name="mode_test_tip">键盘测试 蓝色：按下；绿色：通过</string>
+
+	<string name="color_indicator">按键频率 少 -> 多</string>
+	<string name="key_input">按键输入序列:</string>
+
+	<string name="mode_statistics_desc">用鼠标点击上面的一个按钮或者按下键盘上相应的按键以查看详细统计信息，使用“实时”模式来即时刷新按键热区图，但“延时”模式可以节省CPU资源</string>
+	<string name="mode_test_desc">按下键盘上的按键以测试该按键是否可以正常工作</string>
+
+	<string name="key_code">按键编码</string>
+	<string name="key_char">按键字符</string>
+	<string name="key_name">按键名称</string>
+	<string name="depress_time">按下时间</string>
+	<string name="clear">清除</string>
+	<string name="reset">重置</string>
+	<string name="statistics_list">统计列表</string>
+	<string name="refresh">刷新</string>
+	<string name="real_time">实时</string>
+	<string name="delayed">延时</string>
+	<string name="tip_graph_refresh">当按键有卡顿时请切换至“延时”模式</string>
+	<string name="keep_trace">保留按键轨迹</string>
+
+	<string name="confirm_reset_current">您确定要重置本次按键统计吗？</string>
+	<string name="confirm_reset_total">总共按键统计信息将要被重置，您确定要继续吗？</string>
+	<string name="confirm_again">请再次确认！</string>
+	<string name="alert_reset_total">欲重置总按键次数，请到“偏好”菜单选择“设置”。</string>
+
+	<string name="close">关闭</string>
+	<string name="export_to_xls">导出至电子表格</string>
+	<string name="export">导出</string>
+	<string name="refresh_instantly">立即刷新</string>
+	<string name="txt_filter">文本文件 (*.txt)|*.txt|所有文件 (*.*)|*.*</string>
+
+
+	<string name="info">信息</string>
+	<string name="save_successfully">当时状态保存成功</string>
+
+	<string name="cps_test">CPS测试</string>
+	<string name="cps_instruction">CPS是“每秒种鼠标点击次数”的简称。您可以选择测试时间。您所需要做的是在时间结束前，尽可能多地点击鼠标。您可以测试很多次。根据一些统计，平均CPS值是6.51。根据Google，CPS的世界纪录据说是14.1。选择测试时间之后点击下面的白色方框开始您的测试。</string>
+	<string name="cps_click_me">点击这里开始测试，然后以您最快的速度点击</string>
+	<string name="cps_time_is_up">时间到，点击重置按钮再测试一次</string>
+	<string name="elapse">时间流逝</string>
+	<string name="clicks">点击次数</string>
+	<string name="cps">CPS</string>
+
+	<string name="spacebar_test">空格键CPS测试</string>
+	<string name="spacebar_intruction">空格键CPS测试是空格键每秒按键次数测试的简称。您可以选择测试时间，然后以最快频率按下空格键。您可以进行多次测试。根据Google，平均空格键CPS值是6.11。在进行本测试时，请使用您最习惯使用的键盘。</string>
+	<string name="spacebar_click_me">准备好之后点击这里，然后按下空格键测试就开始了</string>
+	<string name="spacebar_time_is_up">时间到，点击这里再测试一次</string>
+	<string name="strokes">按键次数</string>
+	<string name="spacebar_ready">按下空格键开始测试，并以您最快的速度按</string>
+
+	<string name="wpm_instruction">WPM是每秒钟键入单词数量的简称，这是衡量打字速度的单位。根据Google，平均WPM值为40。本工具同样合适练习打字使用。不要仅关注您的WPM值，准确率在某种程度上说会更加重要，特别是对于新手。理想的准确率应在96%以上。</string>
+	<string name="wpm_total_keystrokes">总按键次数</string>
+	<string name="wpm_correct_keystrokes">正确按键次数</string>
+	<string name="wpm_wrong_keystrokes">错误按键次数</string>
+	<string name="wpm_accruacy">准确率</string>
+	<string name="wpm_backspace">退格键次数</string>
+	<string name="wpm_correct_words">正确单词数量</string>
+	<string name="wpm_wrong_words">错误单词数量</string>
+	<string name="testing_words">测试单词</string>
+	<string name="lower_case">常用小写字母单词</string>
+	<string name="top_200">常用前200个单词</string>
+	<string name="top_1000">常用前1000个单词</string>
+	<string name="toefl">托福</string>
+	<string name="gre">GRE</string>
+	<string name="gmat">GMAT</string>
+	<string name="customize">自定义</string>
+	<string name="bad_words_list">您的单词列表文件有误，请重试。</string>
+	<string name="words_list_intro">请点击“浏览”按钮来选择您的单词列表文件。文件应当是一个只包涵一行英语单词的文本文件。使用管道符（|）将单词分割开。例如，您的一共有三个单词“one”、“two”和“three”。文件的内容应该为“one|two|three”。</string>
+	<string name="test_notice">注意：这些测试单词可能不是考试中的常用词汇，甚至基本不会出现。如果这里面有很多单词您不认识，这非常地正常。不要因为这些单词而影响心情。该工具旨在让您练习以及测试打字，并用于非常准备考试。作者不对单词的准确性负责。</string>
+	<string name="words_not_accepted">部分未达到要求的单词不予以显示。单词的长度应该在1到70之间，并且只能包含英语字母、标点以及数字。</string>
+
+	<string name="index">索引</string>
+	<string name="hot_key">热键</string>
+	<string name="assignment">任务</string>
+	<string name="add">添加</string>
+	<string name="delete">删除</string>
+	<string name="path">路径</string>
+	<string name="volume_up">音量增大</string>
+	<string name="volume_down">音量减小</string>
+	<string name="mute">静音</string>
+	<string	name="display_main">显示主窗体</string>
+	<string name="execute_program">执行程序</string>
+	<string name="new">新建</string>
+	<string name="add_new_assignment">添加一个新任务</string>
+	<string name="assignment_info">任务信息</string>
+	<string name="browse">浏览</string>
+	<string name="assignment_type_warn">请选择任务类型</string>
+	<string name="path_warn">请选择正确的文件路径</string>
+	<string name="hot_key_warn">请先按下您自定的热键</string>
+	<string name="hot_key_duplicated">热键重复，请尝试其他热键</string>
+	<string name="error">错误</string>
+	<string name="unknown_error">未和错误，请重试</string>
+	<string name="success">成功！</string>
+	<string name="warning">警告</string>
+	<string name="delete_assignment_alert">您确定要删除该任务吗？</string>
+
+	<string name="exit_alert">退出后，按键次数将不会被记录，您确定退出吗？</string>
+
+	<string name="general">通用</string>
+	<string name="statistics_file">按键次数统计文件</string>
+	<string name="run_startup">开机时启动本程序</string>
+	<string name="exit_after_alert">退出前提醒</string>
+	<string name="reset_settings">重置设置</string>
+	<string name="save_interval">保存时间间隔（秒）</string>
+	<string name="reset_total_keystrokes">重置总按键次数</string>
+	<string name="set">设定</string>
+	<string name="integer_invalid_alert">无效整数</string>
+	<string name="integer_lower_alert">最小值为 </string>
+	<string name="integer_upper_alert">最大值为</string>
+	<string name="real_reset_total">您确定要重置总按键次数统计文件吗？</string>
+	<string name="reset_configuration_alert">您确定要重置系统设置吗？</string>
+	<string name="double_confirm">请再次确认！</string>
+	<string name="run_on_startup_alert">按键次数不会在Windows启动之后自动记录，除非您手动开启本程序。您确定继续关闭吗？</string>
+	<string name="hide_main_window">程序启动后隐藏主窗体</string>
+	<string name="notify_when_saving">手动保存后通知</string>
+	<string name="message_box">消息框</string>
+	<string name="windows_notification">Windows通知</string>
+
+	<string name="mechanical_simulator">机械键盘声音模拟</string>
+	<string name="cherry_mx_blue">樱桃青轴</string>
+	<string name="cherry_mx_brown">樱桃茶轴</string>
+	<string name="cherry_mx_red">樱桃红轴</string>
+	<string name="cherry_mx_sliver">樱桃银轴</string>
+	<string name="cherry_mx_black">樱桃黑轴</string>
+	<string name="cherry_mx_slient_red">樱桃静音红轴</string>
+	<string name="cherry_mx_slient_black">樱桃静音黑轴</string>
+	<string name="cherry_mx_green">樱桃绿轴</string>
+	<string name="novelkeys_creams">Novelkeys Creams</string>
+	<string name="holy_pandas">Holy Pandas</string>
+	<string name="turquoise_tealios">Turquoise Tealios</string>
+	<string name="gateron_black_inks">Gateron Black Inks</string>
+	<string name="kailh_box_navies">Kailh Box Navies</string>
+	<string name="buckling_spring">Buckling Spring</string>
+	<string name="skcm_blue_alps">SKCM Blue Alps</string>
+	<string name="topre">Topre</string>
+
+	<string name="configuration_corruption">读取配置文件失败，这可能是由于文件损坏。请不要手动修改配置文件除非您了解配置文件语法。现在，您要重置配置文件吗？如果重置，那所有的设置将会被重置到初始状态然后程序启动。如果不重置，程序只会在您成功修改配置文件之后启动。</string>
+	<string name="statistics_corruption">读取统计文件失败，这可能是由于文件损坏。请不要手动修改统计文件除非您了解配置文件语法。现在，您要重置统计文件吗？如果重置，那总按键次数将被重置然后程序启动。如果不重置，程序只会在您成功修改统计文件之后启动。 </string>
+	<string name="key_assignment_corruption">读取按键任务文件失败，这可能是由于文件损坏。请不要手动修改该文件除非您了解其语法。现在，您要重置按键任务文件吗？如果重置，那所有的按键任务将被清空然后程序启动。如果不重置，程序只会在您成功修改按键任务文件之后启动。</string>
+
+	<string name="center_window">窗口位置居中</string>
+	<string name="left_upper_window">窗口位置设为左上角</string>
+
+	<string name="tooltip_refresh_mode">按键热区图将会在“实时”模式中立即刷新，但如果在窗口可见的情况下，\n与“延时”模式相比消耗的CPU资源有稍有点多。如果系统卡顿或者按键\n出现延迟，请切换至“延时”模式。</string>
+	<string name="tooltip_keep_trace">勾选时，按键的轨迹将会被保留。</string>
+
+</text>

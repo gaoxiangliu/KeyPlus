@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<text>
+	<string name="program_title">K+</string>
+	
+	<string name="menu_file">File</string>
+	<string name="save">Save</string>
+	<string name="exit">Exit</string>
+	
+	<string name="menu_mode">Mode</string>
+	<string name="mode_total">Total Keystrokes</string>
+	<string name="mode_current">Current Keystrokes</string>
+	<string name="mode_test">Keyborad Test</string>
+	
+	<string name="menu_preference">Preference</string>
+	<string name="language">Language</string>
+	<string name="english">English</string>
+	<string name="simplified_chinese">Simplified Chinese</string>
+	<string name="color_tone">Color Tone</string>
+	<string name="red">Red</string>
+	<string name="green">Green</string>
+	<string name="blue">Blue</string>
+	<string name="yellow">Yellow</string>
+	<string name="cyan">Cyan</string>
+	<string name="magenta">Magenta</string>
+	<string name="half_rainbow">Half Rainbow</string>
+	<string name="rainbow">Rainbow</string>
+	<string name="black_and_white">Black And White</string>
+	<string name="stay_on_top">Stay On Top</string>
+	<string name="settings">Settings</string>
+
+	<string name="menu_skill_tests">Skill Tests</string>
+	<string name="skill_wpm">Typing Speed (WPM)</string>
+	<string name="skill_cps">Clicking Speed (CPS)</string>
+	<string name="skill_st">Spacebar Test</string>
+
+	<string name="menu_key_assignment">Key Assignments</string>
+	<string name="enable">Enable</string>
+	<string name="disable">Disable</string>
+	<string name="configure">Configure</string>
+
+	<string name="menu_help">Help</string>
+	<string name="view_help">View Help</string>
+	<string name="about">About</string>
+
+	<string name="alert_reboot">Done. Restart this application to take effect by clicking "Yes".</string>
+
+	<string name="mode_total_tip">Total keystrokes starts from </string>
+	<string name="mode_current_tip">keystrokes this time, starts from </string>
+	<string name="mode_test_tip">Keybaord Test Blue: Key pressed; Green: Passed</string>
+
+	<string name="color_indicator">Keystrokes Less -> More</string>
+	<string name="key_input">Key Input Sequence:</string>
+
+	<string name="mode_statistics_desc">Click a key button above or press down a key on your keyboard to check the detailed statistics. Using "Real-time" Mode to get instant heat map of keystrokes, while "Delayed" Mode can save CPU resources.</string>
+	<string name="mode_test_desc">Press down keys on your keyboard to test whether they can work properly.</string>
+
+	<string name="key_code">Key Code</string>
+	<string name="key_char">Key Char</string>
+	<string name="key_name">Key Name</string>
+	<string name="depress_time">Depress Time</string>
+	<string name="clear">Clear</string>
+	<string name="reset">Reset</string>
+	<string name="statistics_list">Statistics List</string>
+	<string name="refresh">Refresh</string>
+	<string name="real_time">Real-time</string>
+	<string name="delayed">Delayed</string>
+	<string name="tip_graph_refresh">Switch to "Delayed" Mode when surfering key lag.</string>
+	<string name="keep_trace">Keep Trace</string>
+
+	<string name="confirm_reset_current">Are you sure to reset keystrokes this time?</string>
+	<string name="confirm_reset_total">You are about to reset the total keystrokes statistics. Are you sure to continue?</string>
+	<string name="confirm_again">Please confirm again!</string>
+	<string name="alert_reset_total">Please go to Menu Preference -> Settings to reset the total keystrokes statistics.</string>
+
+	<string name="close">Close</string>
+	<string name="export_to_xls">Export Spreadsheet</string>
+	<string name="export">Export</string>
+	<string name="refresh_instantly">Refresh Instantly</string>
+	<string name="txt_filter">txt files (*.txt)|*.txt|All files (*.*)|*.*</string>
+	
+	<string name="info">Info</string>
+	<string name="save_successfully">Save current status successfully.</string>
+	
+	<string name="cps_test">CPS Test</string>
+	<string name="cps_instruction">CPS stands for Click-Per-Second. You can choose the test period you want. All you need to do is to click as many times as possible fore time is up. Feel free to try as many times as you want. According to some statistics, the average CPS is 6.51. And the world record was said to be 14.1 according to Google. Select testing time click the white box below to start.</string>
+	<string name="cps_click_me">Click me to start, and click as fast as possible.</string>
+	<string name="cps_time_is_up">Time is up, click Reset button to test again.</string>
+	<string name="elapse">Elapse</string>
+	<string name="clicks">Clicks</string>
+	<string name="cps">CPS</string>
+
+	<string name="spacebar_test">Spacebar CPS Test</string>
+	<string name="spacebar_intruction">Spacebar CPS Test standards for sapcebar Click-Per-Second test. You can select your test time, and hit your spacebar as fast as you can. Feel free to test as many times as you want. The average Spacebar CPS is said to be 6.11 according to Google. Make sure you've got your favorite keyboard when taking this test.</string>
+	<string name="spacebar_click_me">Click me when you're ready, and then press your spacebar to start the test.</string>
+	<string name="spacebar_time_is_up">Time is up, click me to test again.</string>
+	<string name="strokes">Strokes</string>
+	<string name="spacebar_ready">Press spacebar to start, and press as fast as you can.</string>
+
+	<string name="wpm_instruction">WPM standards for words-per-minute, the measurement of typing speed. The average WPM is 40 according to Google. This tool is also suitable for practicing typing speed. Don't concentrate only on the value of WPM, accuracy is somehow more important, especially for the beginners. The ideal value of accuracy is above 96%.</string>
+	<string name="wpm_total_keystrokes">Total Keystrokes</string>
+	<string name="wpm_correct_keystrokes">Correct Keystrokes</string>
+	<string name="wpm_wrong_keystrokes">Wrong Keystrokes</string>
+	<string name="wpm_accruacy">Accuracy</string>
+	<string name="wpm_backspace">Backspace</string>
+	<string name="wpm_correct_words">Correct Words</string>
+	<string name="wpm_wrong_words">Wrong Words</string>
+	<string name="testing_words">Testing Words</string>
+	<string name="lower_case">Frequently Used Lower Case Words</string>
+	<string name="top_200">Top 200 Words</string>
+	<string name="top_1000">Top 1000 Words</string>
+	<string name="toefl">TOEFL</string>
+	<string name="gre">GRE</string>
+	<string name="gmat">GMAT</string>
+	<string name="customize">Customize</string>
+	<string name="bad_words_list">The format of your words list is wrong, please try again.</string>
+	<string name="words_list_intro">Please click Browse button to choose your words list file. The file should be a text file contains only one line of English words. Using pipe character (|) to separate words. For example, your words list contains three words, "one", "two", and "three". The content of the file should be "one|two|three".</string>
+	<string name="test_notice">NOTE: The testing words may not be the frequently used words in the exam, or even less likely to appear. It is very common if there are lots of words unfamiliar to you. Don't let these words affect your mood. This tool is intent for practicing and testing typing, not for preparing for exams. The author takes no responsibility for the accuracy.</string>
+	<string name="words_not_accepted">Some of the words do not meet the requirements and they won't appear. The length of all the words should between 1 and 70, and all the characters should be English letters, punctuation, and digits.</string>
+
+	<string name="index">Index</string>
+	<string name="hot_key">Hot Key</string>
+	<string name="assignment">Assignment</string>
+	<string name="add">Add</string>
+	<string name="delete">Delete</string>
+	<string name="path">Path</string>
+	<string name="volume_up">Volume Up</string>
+	<string name="volume_down">Volume Down</string>
+	<string name="mute">Mute</string>
+	<string	name="display_main">Show Main Window</string>
+	<string name="execute_program">Execute Program</string>
+	<string name="new">New</string>
+	<string name="add_new_assignment">Add A New Assignment</string>
+	<string name="assignment_info">Assignment Info</string>
+	<string name="browse">Browse</string>
+	<string name="assignment_type_warn">Please select a type of the assignment.</string>
+	<string name="path_warn">Please select a correct path.</string>
+	<string name="hot_key_warn">Please press down hot key first.</string>
+	<string name="hot_key_duplicated">Duplicated hot key, please choose another one.</string>
+	<string name="error">Error</string>
+	<string name="unknown_error">Unknown error, please retry.</string>
+	<string name="success">Success!</string>
+	<string name="warning">Warning</string>
+	<string name="delete_assignment_alert">Are you sure to delete this assignment?</string>
+
+	<string name="exit_alert">Keystrokes won't be recorded after quitting, are you sure to continue?</string>
+
+	<string name="general">General</string>
+	<string name="statistics_file">Keystroke Statistics File</string>
+	<string name="run_startup">Run On Windows Startup</string>
+	<string name="exit_after_alert">Alert Before Exit</string>
+	<string name="reset_settings">Reset Settings</string>
+	<string name="save_interval">Save Interval (Seconds)</string>
+	<string name="reset_total_keystrokes">Reset Total Keystrokes</string>
+	<string name="set">Set</string>
+	<string name="integer_invalid_alert">Invalid integer</string>
+	<string name="integer_lower_alert">Minimum value is </string>
+	<string name="integer_upper_alert">Maximum value is </string>
+	<string name="real_reset_total">Are you sure to reset total keystrokes statistics file?</string>
+	<string name="reset_configuration_alert">Are you sure to reset the configuration?</string>
+	<string name="double_confirm">Double confirm!</string>
+	<string name="run_on_startup_alert">Your keystrokes won't be recorded after Windows startup, unless you run KeyPlus manually. Are you sure to continue?</string>
+	<string name="hide_main_window">Hide Main Window After Running</string>
+	<string name="notify_when_saving">Notification When Saving Manually</string>
+	<string name="message_box">Message Box</string>
+	<string name="windows_notification">Windows Notification</string>
+
+	<string name="mechanical_simulator">Mechanical Keyboard Simulation</string>
+	<string name="cherry_mx_blue">Cherry MX Blue</string>
+	<string name="cherry_mx_brown">Cherry MX Brown</string>
+	<string name="cherry_mx_red">Cherry MX Red</string>
+	<string name="cherry_mx_sliver">Cherry MX Sliver</string>
+	<string name="cherry_mx_black">Cherry MX Black</string>
+	<string name="cherry_mx_slient_red">Cherry MX Slient Red</string>
+	<string name="cherry_mx_slient_black">Cherry MX Slient Black</string>
+	<string name="cherry_mx_green">Cherry MX Green</string>
+	<string name="novelkeys_creams">Novelkeys Creams</string>
+	<string name="holy_pandas">Holy Pandas</string>
+	<string name="turquoise_tealios">Turquoise Tealios</string>
+	<string name="gateron_black_inks">Gateron Black Inks</string>
+	<string name="kailh_box_navies">Kailh Box Navies</string>
+	<string name="buckling_spring">Buckling Spring</string>
+	<string name="skcm_blue_alps">SKCM Blue Alps</string>
+	<string name="topre">Topre</string>
+
+	<string name="configuration_corruption">Fail to read configuration file, it may because of corruption. Please do not modify the configuration file unless you know what you are doing. Now, do you want to reset the configuration file? If so, settings will be reseted and program will run. Otherwise, program won't run until you correct the configuration file.</string>
+	<string name="statistics_corruption">Fail to read statistics file, it may because of corruption. Please do not modify the statistics file unless you know what you are doing. Now, do you want to reset the statistics file? If so, keystrokes statistics will be reseted and program will run. Otherwise, program won't run until you correct the statistics file. </string>
+	<string name="key_assignment_corruption">Fail to read key assignment file, it may because of corruption. Please do not modify the file unless you know what you are doing. Now, do you want to reset the the key assignment file? If so, key assignments will be lost and program will run. Otherwise, program won't run unless you correct the key assignment file.</string>
+
+	<string name="center_window">Center Window Position</string>
+	<string name="left_upper_window">Left Upper Window Position</string>
+
+	<string name="tooltip_refresh_mode">Real-time Mode gives you the instantly up-to-date heat map, \nbut it will consume a little bit more CPU resources when the \nwindow is visible compared with Delay Mode. Switch to \nDelay Mode if suffering key lag or system freezes.</string>
+	<string name="tooltip_keep_trace">When checked, keystrokes trace will be retained.</string>
+	
+	<string name=""></string>
+</text>

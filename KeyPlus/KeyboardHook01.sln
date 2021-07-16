@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyboardHook01", "KeyboardHook01.csproj", "{7F9B5EC2-FFA8-496F-87DA-03EE00D1E4CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F9B5EC2-FFA8-496F-87DA-03EE00D1E4CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F9B5EC2-FFA8-496F-87DA-03EE00D1E4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F9B5EC2-FFA8-496F-87DA-03EE00D1E4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F9B5EC2-FFA8-496F-87DA-03EE00D1E4CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {496D323B-5725-4DEE-9F27-8BC3E73EA2D8}
+	EndGlobalSection
+EndGlobal

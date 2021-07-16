@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .warning {
+                background-color: #fff7ae;
+                border-radius: 15px;
+                padding: 20px;
+            }
+            .tip {
+                background-color: #b4ffba;
+                border-radius: 15px;
+                padding: 20px;
+            }
+            .title {
+                font-weight: bold;
+                font-size: 24px;
+            }
+            .question {
+                font-weight: bold;
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+            .answer {
+                margin-top: 5px;
+                padding-top: 0px;
+                margin-bottom: 5px;
+            }
+            .tip_text {
+                font-weight: bold;
+                font-size: 16px;
+                color: #108b00;
+            }
+            .warning_text {
+                font-weight: bold;
+                font-size: 16px;
+                color: #a07a00;    
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width: 100%; height: 600px;">
+            <!-- left panel menu -->
+            <div style="float: left; height: 100%; border-right: 1px solid #ccc; width: 200px;">
+                <p class="title">Content</p>
+                <ul style="list-style-type: none;">
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#statistics">Keystrokes Statistics</a></li>
+                    <li><a href="#keyboard_test">Keyboard Test</a></li>
+                    <li><a href="#typing_speed">Typing Speed Test</a></li>
+                    <li><a href="#key_assignment">Key Assignment</a></li>
+                    <li><a href="#mechanical">Mechanical Sound</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- right part main body -->
+            <div style="float: left; height: 100%; width: 600px; padding: 0 10px 0 10px; overflow-y: scroll;">
+                <!-- <div style="clear: both;"></div> -->
+                <p id="overview" class="title">Overview</p>
+                <p>
+                    This program is relating to the keyboard. It can record the keystrokes of your keyboard and give you the 
+                    statistics list as well as an intuitive keystrokes heat map. It can also serve as a 104 keys keyboard testing utility.
+                     Another useful function is the key assignment, in which you can define system hotkeys to perform some tasks like 
+                     control system volume and execute some programs etc. Besides, you can test and improve typing speed with this 
+                     program. Another interesting function is simulating the sound of a mechanical keyboard, this is an entertaining 
+                     function that tends to increase typing pleasure.
+                </p>
+                <p>
+                    If you find any bug in this program, please feel free to contact the developer. The program is open-sourced, 
+                    you can check how does it work.
+                </p>
+                <p>
+                    Hope this program is easy to use even without reading the instruction. But it is recommended to read if you want 
+                    to gain better experiences. This instruction will introduce some tips and things you should know about. 
+                    This instruction does not include a very simple function, so it won't be too long to read.
+                </p>
+
+                <br><br>
+                <p id="statistics" class="title">Keystrokes Statistics</p>
+                <p>
+                    Keystrokes statistics is the basic function of this program. After running the program, it will record your 
+                    keystrokes automatically. Feel free to minimize the main window of the program. It will record your keystrokes 
+                    in the background.
+                </p>
+                <div class="warning">
+                    <div class="warning_text">NOTICE</div>
+                    If you exit this program by clicking the "Exit" menu item, the keystrokes won't be recorded. 
+                    If you can see the icon on the tray of the taskbar, this program is running in the background, and keystrokes 
+                    will be recorded. 
+                    By default, this program will run automatically on Windows startup. You can change this by clicking 
+                    "Preference" -> "Settings". Also notice that keystrokes may not work properly under some circumstances,
+                     like in VMWare virtual machines.
+                </div>
+                <p>Total keystrokes are the keystrokes statistics from the time you install this program.</p>
+                <p>Current keystrokes are the keystrokes statistics from the time you run this program.</p>
+                <p>
+                    Only total keystrokes will be stored in a file. So, if the current keystroke statistics are important to you, 
+                    make sure to save the statistics by clicking "Statistics List" -> "Export."
+                </p>
+                <p>
+                    You can switch the two statistics mode by clicking the radio buttons or select from the menu. You can also select
+                     your favorite color tone for the keystrokes statistics heat map.
+                </p>
+                <p>
+                    Refresh mode is when the keystrokes heat map will be updated. In "Delay" mode, it will be updated along with saving 
+                    the total keystrokes statistics file. The saving interval can be changed in "Preference" -> "Settings". The default 
+                    interval is 10 minutes. In "Real-Time" mode, it will be updated right after each keystroke.
+                </p>
+                <div class="warning">
+                    <div class="warning_text">NOTICE</div>
+                    This program only supports 104 keys or fewer QWERTY keyboards. If your keyboard has more than 104 keys, 
+                    some of the keys may not be recorded. If your keyboard is in not QWERTY layout, this program may not be 
+                    suitable for you.
+                </div>
+                <br>
+                <div class="tip">
+                    <div class="tip_text">TIPS</div>
+                    Keystroke statistics can be versatile in real life. For example, it gives you an overview of the using 
+                    frequency of keys, so you can know which keys are frequently used. (So, if you are a keyboard manufacturer,
+                     you may consider strengthening the frequently used keys.) Also, you can know which letter is the most 
+                     frequently used letter in English. (E of course.) Another example is that if you are using non-English 
+                     language IME, you can compare the efficiency of different IMEs by looking at the keystrokes heat map. 
+                     An effective non-English IME should avoid the keys like Q, Z, O, and P, etc. (They are difficult to press down.) 
+                     Also, you can check which keys are frequently used in a game. The possibilities are infinite.
+                </div>
+
+                <br><br><br>
+                <p id="keyboard_test" class="title">Keyboard Test</p>
+                <p>
+                    When switching to this mode, you can test whether your keyboard works properly. You can check or uncheck "Keep Trace" 
+                    according to your needs.
+                </p>
+                <div class="tip">
+                    <div class="tip_text">TIPS</div>
+                    You can check whether your keystrokes are recorded under the current circumstance in the keyboard test mode. Also, when "Keep Trace" 
+                    is disabled, the keyboard heat map in the main window can serve as a keystroke demonstration.
+                </div>
+
+                <br><br><br>
+                <p id="typing_speed" class="title">Typing Speed Test</p>
+                <p>
+                    You can go to "Skill Tests" -> "Typing Speed (WPM)" to test your typing speed. It is also a very 
+                    good tool to improve your typing speed. The words are frequently used in English. So, just practice.
+                    And these words help with improving typing speed in daily lives.
+                </p>
+                <p>
+                    The unit of typing speed in English is WPM, or words per minute. Here comes the question, how to define the 
+                    term "word"? How many letters in a word? Here, the length of a word is 5 characters. (Note, "characters" not 
+                    "letters".) A character includes letters, punctuation, and space. Yes, between words, there is a space, which 
+                    will also be counted into input provided it is valid. For example, if your WPM is 80, that means your valid 
+                    input characters are 400 this time.
+                </p>
+                <p>
+                    Now, how to define valid characters? If you type a word correctly and press down the space bar, the number of 
+                    the letters in the word, as well as space, are the valid characters. For example, you input the testing word "girl" 
+                    correctly, these are 5 valid characters that will be included in calculating WPM. On the other hand, if you make an even 
+                    tiny typo for a word, all the characters (including space) are invalid. Using the example "girl" again, if 
+                    you type "gril", "girle", "gir" and then press down the space bar, the 5 characters won't be included in 
+                    WPM. It is obvious that valid and invalid characters depend on the testing words, they have nothing to do 
+                    with how many times you press down the keys. (for you may make typos)
+                </p>
+                <p>
+                    So much about calculating WPM. Let us take a look at the calculation of accuracy. You may think accuracy is the
+                    ratio of the number of valid characters (described above) and the total characters of testing words. Unfortunately, 
+                    this is not the case! Accuracy relating to how many times you press down the keys. And the term "total keystrokes" 
+                    and "valid (invalid) keystrokes" are introduced. Whenever you are supposed to press down a key, a correct 
+                    keystroke is expected. For example, you are about to input the testing word "girl". At this time, the expected 
+                    keystroke is G on the keyboard. If you finish input this word, the expected keystroke is the space bar. If you make some 
+                    mistakes in the middle of a word, for example, you type "jri" (all three letters are wrong), and then the expected 
+                    keystroke is still L (not G). Even though you correct the letters before pressing down the space bar, the invalid 
+                    keystrokes will still be counted. So, your accuracy will still be affected.
+                </p>
+                <p>
+                    Here are some tips about practicing typing speed. First, adjusting your sitting posture, you may use a comfortable 
+                    desk and chair. Also, sit straight. It is hard to say which posture is correct for using a computer, but you should 
+                    have to find a posture that is healthy and comfortable for you. Second, your keyboard. Membrane keyboards are 
+                    horrible in terms of feeling, but it does not mean that the typing speed is slow. Mechanical keyboards feel good when 
+                    typing, and they could give you a better experience if you using the keyboard a lot. It is hard to say which kind of 
+                    switch is better, for all of them are good and they are suitable for different people. So, you may need to find 
+                    which type of switch you prefer. Generally, the clicky and tactile switch is suitable for typing, because they have the 
+                    feedback which helps with reducing typos, while the linear switch is suitable for gaming (One may have more typos with a 
+                    linear switch). But, again, different people have different feelings. Last, the most important tip is how to 
+                    practice. Accuracy is very important in almost any case. So, don't concentrate only on the value of WPM. Don't be 
+                    so anxious to improve WPM and try to type fast, but it turns out that you make lots of typos. Mistakes 
+                    contribute to reducing WPM dramatically and disturbing your typing pace and mood. So, pay more attention to accuracy. 
+                    You are recommended to concentrate when typing. And type at the maximum speed under the condition that your accuracy 
+                    is at least 96% (98% is recommended). After a while, you will find that your typing speed is improved linearly. 
+                </p>
+
+                <br><br>
+                <p id="key_assignment" class="title">Key Assignment</p>
+                <p>
+                    You can enable, disable or configure key assignments in the "Key Assignment" menu. The key assignment is 
+                    the system hotkeys. Assignments include displaying the main window of this program when it is running in 
+                    the background, control system volume, and execute a program or open a media file.
+                </p>
+                <p>
+                    The hotkey combination could be a single key, or multiple keys with Ctrl, Alt, Shift, or Windows.
+                </p>
+                <div class="tip">
+                    <div class="tip_text">TIPS</div>
+                    This function is especially useful if you are using a desktop computer keyboard without function keys.
+                </div>
+
+                <br><br><br>
+                <p id="mechanical" class="title">Mechanical Keyboard Sound Simulating</p>
+                <div class="warning">
+                    <div class="warning_text">NOTICE</div>
+                    The user experience can vary on different computers. Do not use it if it can slow down your computer.
+                </div>
+
+                <br><br><br>
+                <p id="faq" class="title"FAQ>FAQ</p>
+                <p class="question">Is the program safe?</p>
+                <p class="answer">- Absolutely! It is open-sourced, you can check how does it work.</p>
+                <br>
+                <p class="question">Why does my anti-virus software reports this program?</p>
+                <p class="answer">
+                    - It may because of file reading and writing and register modifying. This program will only read and write files under
+                     the directory "KeybaordStatistics" at your Windows user Document directory.
+                </p>
+                <p class="answer">- As for register, it is only for running this program automatically on Windows startup.</p>
+                <p class="answer">- It is totally fine to add this program to the trust list.</p>
+                <br>
+                <p class="question">Will my key activities be uploaded online?</p>
+                <p class="answer">- Absolutely no. It will only store on your local machine.</p>
+                <br>
+                <p class="question">Why I cannot see the main window after clicking the icon on the system tray?</p>
+                <p class="answer">- You can right-click the icon on the system tray, and select Center Window Position or Left Upper Window Position.</p>
+                <br>
+                <p class="question">Why this program doesn't record keystrokes sometimes?</p>
+                <p class="answer">
+                    - As mentioned before, this program only monitor keystrokes on higher-level in the OS. Some other programs may 
+                    intercept the keyboard input at lower-level, which cannot be captured by this program.
+                </p>
+                <br>
+                <p class="question">Why the program cannot distinguish two Enter keys?</p>
+                <p class="answer">- This porgram monitor keystrokes on higher-level in the OS, and for Windows, these two Enter keys share the same key code.</p>
+                <br>
+                <p class="question">Why the keystrokes heat map does not refresh?</p>
+                <p class="answer">
+                    - Keystrokes heat map will be refreshed instantly under "Real-time" Mode, but it may consume more CPU resources when the window is visible. 
+                    (When window is minimized, it won't consume much.) So, if you want to see the dynamic change of the keystrokes heat map, make sure to use 
+                    "Real-time" Mode. In the "Delayed" Mode, heat map will only be refreshed along with saving keystrokes statistics file.
+                </p>
+                <br>
+                <p class="question">Why can't I press down several keys simultaneously?</p>
+                <p class="answer">
+                    - It is because of your keyboard. For most of the mechanical keyboards, there is no problem to press down all the keys simultaneously.
+                    But, you can only press down only a few keys together on a membrane keyboard.
+                </p>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </body>
+</html>
