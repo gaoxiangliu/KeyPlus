@@ -31,3 +31,7 @@ Just keep practicing, high typing speed means you can reply the emails faster, w
 Note: different computers and different state of computer will give you different experience for this function. Sometimes, sound lag may occur.
 
 For more help information, please download it and view the help in program.
+
+## Update log
+### v1.0.0.1 (July 25, 2021)
+Fixed the bug in CPS test. Only left mouse button is available in CPS test.
