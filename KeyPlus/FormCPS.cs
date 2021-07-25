@@ -101,21 +101,24 @@ namespace KeyboardHook01
 
         private void lblClick_MouseDown(object sender, MouseEventArgs e)
         {
-            if (clicks == 0 && ready)
+            if (e.Button == MouseButtons.Left)
             {
-                // start
-                timer1.Enabled = true;
-                lblClick.BackColor = Color.ForestGreen;
-                lblClick.ForeColor = Color.White;
-                ++clicks;
-                lblClick.Text = clicks.ToString();
-                lblTextClicks.Text = clicks.ToString();
-            }
-            else if (clicks > 0 && ready)
-            {
-                ++clicks;
-                lblClick.Text = clicks.ToString();
-                lblTextClicks.Text = clicks.ToString();
+                if (clicks == 0 && ready)
+                {
+                    // start
+                    timer1.Enabled = true;
+                    lblClick.BackColor = Color.ForestGreen;
+                    lblClick.ForeColor = Color.White;
+                    ++clicks;
+                    lblClick.Text = clicks.ToString();
+                    lblTextClicks.Text = clicks.ToString();
+                }
+                else if (clicks > 0 && ready)
+                {
+                    ++clicks;
+                    lblClick.Text = clicks.ToString();
+                    lblTextClicks.Text = clicks.ToString();
+                }
             }
         }
     }
