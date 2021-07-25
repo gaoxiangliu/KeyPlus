@@ -34,4 +34,4 @@ For more help information, please download it and view the help in program.
 
 ## Update log
 ### v1.0.0.1 (July 25, 2021)
-- Fixed the bug in CPS test. Only left mouse button is available in CPS test.
+- Fixed the bug in the CPS test. Only the left mouse button is available in the CPS test.
